@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Star Wars</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+        <a href="index.html">
+          <img src="img/logo.gif" class="logo" alt="Logo Star Wars">
+        </a>
+        <a href="indexbloque1.html">
+        <img src="img/Darth Vader dibujo.png" class="darth" alt="dart vader">
+        </a>
+    </nav>
+    <form method="post" action='' class="login">
+        <fieldset>
+          <h2>Formulario de registro</h2>
+          <p>
+          Por favor, rellena con la información requerida.<br>
+          "Que la fuerza te acompañe"
+          </p>
+          <label for="Name" class="login" >Nombre: <input class="registro" id="name" name="first-name" type="text" required /></label>
+          <label for="last-name" class="login">Apellidos: <input class="registro" id="last-name" name="last-name" type="text" required /></label>
+          <label for="email" class="login">Email: <input class="registro" id="email" name="email" type="email" required /></label>
+          <label for="new-password" class="login">Contraseña:  <input class="registro" id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+          <input type="button" class="button log" value= "Enviar" onclick="window.location.href='indexbloque1.html'">
+        </fieldset>
+    </form>
+    <!--<footer class="distance">
+      <img src="img/arma star wars.gif" class="arma" alt="arma">
+      <img src="img/R2D2.gif" class="r2d2" alt="r2d2">
+      <img src="img/boba y guerrera.gif" class="boba" alt="boba y guerrera">
+      <img src="img/Señor ayuda mandalor.gif" class="senor" alt="señor">
+      <img src="img/Mandalor y baby Joda.gif" class="mandalor" alt="mandalor">
+      <img src="img/Guerrera de choque.gif" class="guerrera" alt="guerrera">
+      <img src="img/Darth Vader.gif" class="figura" alt="vader">
+  </footer>
+  <audio src="./sound/fondo.mp3" autoplay controls class="controls"></audio>-->
+  </body>
+</html>

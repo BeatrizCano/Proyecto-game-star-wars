@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Star Wars</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+        <img src="img/logo.gif" class="logo" alt="Logo Star Wars">
+        <a href="https://es.wikipedia.org/wiki/Star_Wars" target="_blank">
+          <img src="img/Darth Vader dibujo.png" class="darth" alt="dart vader">
+        </a>
+    </nav>
+    <header>
+      <h1>JUEGO DE STAR WARS</h1>
+      <h2 class="bienvenido">¡Bienvenido@!</h2>
+      <p>
+        ¿Preparado para poner a prueba tus conocimientos sobre la saga de Star Wars?<br>
+        Descubre a qué lado de la fuerza perteneces.
+      </p>
+    </header>
+    <form method="post" action=''>
+      <!--<fieldset>
+        <h2>Formulario de registro</h2>
+        <p>
+        Por favor, rellena con la información requerida.<br>
+        "Que la fuerza te acompañe"
+        </p>
+        <label for="Name" class="login" >Nombre: <input class="registro" id="name" name="first-name" type="text" required /></label>
+        <label for="last-name" class="login">Apellidos: <input class="registro" id="last-name" name="last-name" type="text" required /></label>
+        <label for="email" class="login">Email: <input class="registro" id="email" name="email" type="email" required /></label>
+        <label for="new-password" class="login">Contraseña:  <input class="registro" id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>-->
+      <fieldset>
+        <h2>¿Comenzamos?</h2>
+        <p>
+          A continuación encontrarás una serie de preguntas. Escoge la respuesta correcta.<br>
+          ¡Y sobre todo, difruta del juego!
+        </p>
+      </fieldset>
+      <fieldset class="imgespada">
+        <label>¿De qué color es la espada del Consul jedi?</label>
+            <label for="azul" class="vida">
+              <input id="azul" type="radio" value="azul" name="espada" class="inline dead">
+              De color azul.
+            </label>
+          <label for="verde" class="vida">
+            <input id="verde" type="radio" value="verde" name="espada" class="inline dead">
+            De color verde.
+          </label>
+          <label for="morado"class="vida">
+            <input id="morado" type="radio" value="morado" name="espada" class="inline dead">
+            De color morado.
+          </label> 
+          <label for="blanca"class="vida">
+            <input id="blanca" type="radio" value="blanca" name="espada" class="inline dead">
+            De color blanco.
+          </label> 
+          <!--La respuesta correcta es verde-->
+        </fieldset>
+      <fieldset>
+        <label id="autor">¿Quién fue el creador de la saga de Star Wars?</label>
+          <label for="radio1"><img src="img/Francis_Ford_Coppola.jpg" alt="Francis Ford Coppola" class="img" target="_blank"></label>
+          <input id="radio1" type="radio" value="1" name="creador" class="inline photo">
+          <label for="radio2"><img src="img/George Lucas.jpg" alt="George Lucas" class="img" target="_blank"></label>
+          <input id="radio2" type="radio" value="2" name="creador" class="inline photo">
+          <label for="radio3"><img src="img/Harrison Ford.jpg" alt="Harrison Ford" class="img" target="_blank"></label>
+          <input id="radio3" type="radio" value="3" name="creador" class="inline photo">
+        <!--la respuesta correcta es George Lucas-->
+      </fieldset>
+      <fieldset class="imgdroide">
+        <label>¿Qué dicen los droides de combate al recibir una orden?</label>
+            <label for="capitan" class="vida">
+              <input id="capitan" type="radio" value="capitan" name="droide" class="inline dead">
+              Sí, mi capitan.
+            </label>
+          <label for="camino" class="vida">
+            <input id="camino" type="radio" value="camino" name="droide" class="inline dead">
+            Este es el camino.
+          </label>
+          <label for="roger"class="vida">
+            <input id="roger" type="radio" value="roger" name="droide" class="inline dead">
+            Roger, roger.
+          </label> 
+          <!--La respuesta correcta es Roger, roger-->
+        </fieldset>
+      <fieldset>
+        <label id="clones">¿Qué ADN usaron para  hacer los clones?</label>
+          <label for="radio4"><img src="img/Jango Feet.webp" alt="Jango Feet" class="img" target="_blank"></label>
+          <input id="radio4" type="radio" value="4" name="creador" class="inline photo">  
+          <label for="radio5"><img src="img/Qui Gon Jinn.webp" alt="Qui Gon Jinn" class="img" target="_blank"></label>
+          <input id="radio5" type="radio" value="5" name="creador" class="inline photo">  
+          <label for="radio6"><img src="img/Din Djarin.webp" alt="Din Djarin" class="img" target="_blank"></label>
+          <input id="radio6" type="radio" value="6" name="creador" class="inline photo">  
+          <!--La respuesta correcta es Jango Feet-->
+      </fieldset>
+      <fieldset class="imgcredo">
+        <label>¿Según el credo de los mandalorianos?</label>
+            <label for="castidad" class="vida">
+              <input id="castidad" type="radio" value="castidad" name="credo" class="inline dead">
+              Han de respetar el voto de castidad.
+            </label>
+          <label for="casco" class="vida">
+            <input id="casco" type="radio" value="casco" name="credo" class="inline dead">
+            Les prohibe quitarse el casco en público.
+          </label>
+          <label for="cuidar" class="vida">
+            <input id="cuidar" type="radio" value="cuidar" name="credo" class="inline dead">
+            Han de cuidar de sus huerfanos.
+          </label> 
+          <!--La respuesta correcta es Quitarse el casco en público-->
+        </fieldset>
+      <fieldset>
+        <label id="clones">¿Cómo se llamaba antes Darth Vader?</label>
+          <label for="radio7"><img src="img/Mace Windu.webp" alt="Mace Windu" class="img" target="_blank"></label>
+          <input id="radio7" type="radio" value="7" name="creador" class="inline photo">  
+          <label for="radio8"><img src="img/Obi Wan Kenobi.webp" alt="Obi Wan Kenobi" class="img" target="_blank"></label>
+          <input id="radio8" type="radio" value="8" name="creador" class="inline photo">  
+          <label for="radio9"><img src="img/Anakin Skywalker.webp" alt="Anakin Skywalker" class="img" target="_blank"></label>
+          <input id="radio9" type="radio" value="9" name="creador" class="inline photo">  
+          <!--La respuesta correcta es Anakin Skywalker-->
+      </fieldset>
+      <fieldset class="imgdooku">
+        <label>¿Quién ordenó decapitar al Conde Dooku?</label>
+          <label for="Sidious" class="vida">
+            <input id="Sidious" type="radio" value="Sidious" name="conde" class="inline dead">
+            Darth Sidious.
+          </label>
+          <label for="Ventres" class="vida">
+            <input id="Ventres" type="radio" value="Ventres" name="conde" class="inline dead">
+            Asajj Ventres.
+          </label>
+          <label for="Maul"class="vida">
+            <input id="Maul" type="radio" value="Maul" name="conde" class="inline dead">
+            Darth Maul.
+          <!--La respuesta correcta es Darth Sidious-->
+      </fieldset>
+      <fieldset>
+        <h2>¡Vas muy bien!</h2>
+        <p>
+          Las siguientes preguntas son de opción múltiple.<br>¿Preparado?
+        </p>
+      </fieldset>
+      <fieldset class="img66">
+          <label>¿Sabes qué es el Protocolo Clon 66 u Orden 66? </label>
+          <label for="iden" class="vida">
+            <input id="iden" type="checkbox" name="iden" class="inline dead" value="iden"/>
+            Decía que todos los jedis eran traidores.
+          </label>
+          <label for="propia" class="vida">
+            <input id="propia" type="checkbox" name="propia" class="propia" value="propia"/>
+            El ejército clon la siguió por voluntad propia.
+          </label>
+          <label for="imp" class="vida">
+            <input id="imp" type="checkbox" name="imp" class="inline dead" value="imp"/>
+            La implantaron en el cerebro de los clones.
+          </label>
+          <label for="creo" class="vida">
+            <input id="creo" type="checkbox" name="creo" class="inline dead" value="creo"/>
+            Darth Sidious la usó en su propio beneficio.
+          </label>
+          <label for="fav" class="vida">
+            <input id="fav" type="checkbox" name="fav" class="inline dead" value="fav"/>
+            Sus diseñadores estaban a favor de los sith.
+          </label>
+          <!--Las respuestas correctas son: 
+          Identificaba a todos los jedis como traidores
+          La implantaron en el cerebro de los clones
+          Darth Sidious la usó en su propio beneficio
+          las incorectas se corregirían así: 
+          El ejercito clon se vió obligado a seguir la norma
+          los diseñadores creían que era solo para los jedis rebeldes
+         -->
+      </fieldset>
+      <fieldset class="imgossus">
+        <label>¿Sabes en que consistió la Masacre de Ossus?</label>
+        <label for="wars" class="vida">
+          <input id="wars" type="checkbox" name="wars" class="inline dead" value="wars"/>
+          Se produjo durante las Guerras Clon.
+        </label>
+        <label for="new" class="vida">
+          <input id="new" type="checkbox" name="new" class="inline dead" value="new"/>
+          Su objetivo era la Nueva Orden Jedi.
+        </label>
+        <label for="krayt" class="vida">
+          <input id="krayt" type="checkbox" name="krayt" class="inline dead" value="krayt"/>
+          Darth Krayt ordenó la matanza jedi.
+        </label>
+        <label for="jedi" class="vida">
+          <input id="jedi" type="checkbox" name="jedi" class="inline dead" value="jedi"/>
+          Todos los jedis fueron aniquilados.
+        </label>
+        <label for="sith" class="vida">
+          <input id="sith" type="checkbox" name="sith" class="inline dead" value="sith"/>
+          Los sith asesinaron a aprendices jedis.
+        </label>
+        <!--las respuesta correctas son:
+          Su objetivo era la Nueva Orden Jedi
+          Darth Krayt ordenó la matanza jedi
+          Los sith asesinaron a aprendices jedis
+          Las incorrectas, se corregirían así:
+          Se produjo después de la caída de Coruscant
+          La mitad de los jedis fueron aniquilados 
+        -->
+      </fieldset> 
+      <fieldset class="imgrevan">        
+        <label>¿Quién era Darth Revan, el Revanchista? </label>
+        <label for="jedi" class="vida">
+          <input id="jedi" type="checkbox" name="jedi" class="inline dead" value="jedi"/>
+          Darth Revan era un caballero jedi.
+        </label>
+        <label for="servir" class="vida">
+          <input id="servir" type="checkbox" name="servir" class="inline dead" value="servir"/>
+          Darth Revan siempre sirvió al Sith Eterno.
+        </label>
+        <label for="mandaloriano" class="vida">
+          <input id="mandaloriano" type="checkbox" name="mandaloriano" class="inline dead" value="mandaloriano"/>
+          Darth Revan era un mandaloriano.
+        </label>
+        <label for="señor" class="vida">
+          <input id="señor" type="checkbox" name="señor" class="inline dead" value="señor"/>
+          Era el Señor Oscuro de los Sith.
+        </label>
+        <label for="Carnicero" class="vida">
+          <input id="Carnicero" type="checkbox" name="Carnicero" class="inline dead" value="Carnicero"/>
+          Se le conocía como Revan el Carnicero.
+        </label>
+        <!--las respuestas correctas son:
+          Darth Revan era un caballero jedi
+          Era el Señor Oscuro de los Sith
+          Se le conocía como Revan el Carnicero
+          las incorrectas, se corregirían así:
+          Darth Revan, se liberó de la influencia del Sith Eterno, e hizo el bien
+          Darth Revan era un mandaloriano
+        -->
+      </fieldset>
+      <!--Bajo cada pregunta iría la respuesta, acertada o no y una pequeña explicación.
+      Mirar cómo hacerlo--> 
+      <fieldset>
+        <h2>¡Estos son tus resultados!</h2>
+        <p>Lo has conseguido.<br>¡Eres un Iniciado Jedi!</p>
+        <!--Irian los resultados según las preguntas acertadas. 
+          Poner frases relacionadas, en plan, "Eres un autentico maestro de la fuerza"-->
+      </fieldset>  
+      <fieldset class="imgmas">
+        <h2 class="bienvenido">¿Aún tienes ganas de más?</h2>
+        <p>Regístrate en nuestra web y sigue jugando el siguiente nivel.</p>
+        <input type="button" class="button" value= "Sabes, a veces hasta me asombro de mí mismo" onclick="window.location.href='indexlogin.html'">
+      </fieldset>   
+    </form>
+    <footer>
+        <a href="https://starwars.fandom.com/es/wiki/Categor%C3%ADa:Armas" target="_blank">
+          <img src="img/arma star wars.gif" class="arma" alt="arma">
+        </a>
+        <a href="https://es.wikipedia.org/wiki/R2-D2" target="_blank">
+        <img src="img/R2D2.gif" class="r2d2" alt="r2d2">
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Boba_Fett" target="_blank">
+        <img src="img/boba y guerrera.gif" class="boba" alt="boba y guerrera">
+        </a>
+        <a href="https://starwars.fandom.com/es/wiki/Kuiil" target="_blank">
+        <img src="img/Señor ayuda mandalor.gif" class="senor" alt="señor">
+        </a>
+        <a href="https://es.wikipedia.org/wiki/El_Mandaloriano_(personaje)" target="_blank">
+        <img src="img/Mandalor y baby Joda.gif" class="mandalor" alt="mandalor">
+        </a>
+        <a href="https://starwars.fandom.com/es/wiki/Carasynthia_Dune" target="_blank">
+        <img src="img/Guerrera de choque.gif" class="guerrera" alt="guerrera">
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Darth_Vader" target="_blank">
+        <img src="img/Darth Vader.gif" class="figura" alt="vader">
+        </a>
+    </footer>
+    <audio src="./sound/fondo.mp3" autoplay controls class="controls"></audio>
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,355 @@
+body {
+    background: darkgray;
+    background-image: 
+    url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.darth {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+}
+
+.login {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button {
+    padding: 10px 5px;
+    font-size: medium;
+    border-radius: 15px;
+    margin:10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    border:solid 1px gold;
+}
+
+.log {
+    padding: 10px 40px;
+    font-size: medium;
+    border-radius: 15px;
+    margin:10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    border:solid 1px gold;
+}
+
+.button:hover {
+    color: goldenrod;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    max-width: 70%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 2em; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0.9;
+    border: solid 1px #fff;
+    box-shadow: 0 0 30px #ffffff;
+  }
+
+fieldset {
+    text-align: center;
+    padding: 20px 70px;
+    box-shadow: 0 0 30px #fff;
+}
+
+.login {
+    display: block;
+    text-align: left;
+}
+
+/*.distance {
+    padding-top: 80px;
+}*/
+
+.registro {
+    display: block;
+    border-radius: 15px;
+    padding: 10px; 
+    height: 3em;
+    margin:10px 0;
+    width: 100%;
+    height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+}
+
+.photo {
+    appearance: none;
+    visibility: hidden;
+}
+
+.img {
+    width: 60px;
+    height: 80px;
+    padding: 10px;
+}
+
+.vida {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.imgespada {
+    background-image: linear-gradient( 115deg, hsla(250, 69%, 10%, 0.7), rgba(51, 43, 6, 0.705) ),
+    url(img/Jedi\ consul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0.8);
+    
+}
+
+.imgdroide {
+    background-image: linear-gradient( 115deg, hsla(249, 67%, 31%, 0.468), rgba(132, 111, 15, 0.62) ),
+    url(img/droides\ de\ combate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.imgcredo {
+    background-image: linear-gradient( 115deg, hsla(249, 67%, 31%, 0.709), rgba(132, 111, 15, 0.714) ),
+    url(img/Asedio\ a\ mandalor.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.imgdooku {
+    background-image: linear-gradient( 115deg, hsla(249, 67%, 31%, 0.468), rgba(132, 15, 128, 0.62) ),
+    url(img/Conde\ Dooku.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img66 {
+    background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.553), rgba(33, 7, 33, 0.558) ),
+    url(img/orden\ 66.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgossus {
+    background-image: linear-gradient( 115deg, hsla(59, 67%, 31%, 0.802), rgba(132, 15, 128, 0.712) ),
+    url(img/masacre\ en\ Ossus.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgrevan {
+    background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.553), rgba(33, 7, 33, 0.558) ),
+    url(img/darth\ revan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgmas {
+    background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.654), rgba(33, 7, 33, 0.644) ),
+    url(img/Fondo\ final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgeterno {
+    background-image: linear-gradient( 115deg, hsla(60, 63%, 9%, 0.728), rgba(33, 7, 33, 0.723) ),
+    url(img/Order_of_the_Sith_Lord.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.imgwindu {
+    background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.422), rgba(33, 7, 33, 0.558) ),
+    url(img/Samuel\ L.\ Jackson.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.imgpadawan {
+    background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.422), rgba(33, 7, 33, 0.558) ),
+    url(img/padawan.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.imgsolo {
+    background-image: linear-gradient( 115deg, hsla(201, 70%, 9%, 0.773), rgba(33, 7, 33, 0.726) ),
+    url(img/El\ Halcón\ Milenario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.imgventres {
+    background-image: linear-gradient( 115deg, hsla(9, 70%, 9%, 0.741), rgba(33, 7, 33, 0.726) ),
+    url(img/Assaj\ ventres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.imgcelebrar {
+    background-image: linear-gradient( 115deg, hsla(55, 52%, 9%, 0.71), rgba(54, 12, 39, 0.701) ),
+    url(img/fondo\ celebracion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.imgwatto {
+    background-image: linear-gradient( 115deg, hsla(90, 4%, 20%, 0.687), rgba(32, 13, 31, 0.725) ),
+    url(img/watto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.imgbanda {
+    background-image: linear-gradient( 115deg, hsla(94, 52%, 14%, 0.606), rgba(110, 44, 108, 0.591) ),
+    url(img/banda\ sonora.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.encuesta {
+    display: block;
+}
+
+.textarea {
+    width:70%;
+    margin: auto;
+    border-color:gold;
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+
+h1 {
+    text-shadow: 0 0 30px #fff;
+}
+
+h2 {
+    color: deepskyblue;
+}
+
+.bienvenido {
+    color: gold;
+}
+
+
+.r2d2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    padding-bottom: 20px;
+    left: 8%;
+    transform: translate(-50%, -50%); 
+}
+
+.figura {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding-bottom: 20px;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+
+.guerrera {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding-bottom: 20px;
+    left: 36%;
+    transform: translate(-50%, -50%); 
+}
+
+.senor {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding-bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.boba {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding-bottom: 20px;
+    left: 64%;
+    transform: translate(-50%, -50%);
+}
+
+.mandalor {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding-bottom: 20px;
+    left: 78%;
+    transform: translate(-50%, -50%);
+}
+
+.arma {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding-bottom: 20px;
+    left: 92%;
+    transform: translate(-50%, -50%);
+}
+
+.controls {
+    width: 100%;
+    background-color: #f5f6f7;
+    margin-top: 50px;
+    box-shadow: 0 0 30px #fff;
+}
+
