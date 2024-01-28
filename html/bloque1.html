@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juego de Star Wars bloque 1</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <nav>
-        <a href="index.html">
-          <img src="img/logo.gif" class="logo" alt="Logo Star Wars">
+        <a href="../index.html">
+          <img src="../resources/img/logo.gif" class="logo" alt="Logo Star Wars">
         </a>
         <a href="https://es.wikipedia.org/wiki/Star_Wars" target="_blank">
-          <img src="img/Darth Vader dibujo.png" class="darth" alt="dart vader">
+          <img src="../resources/img/Darth Vader dibujo.png" class="darth" alt="darth vader">
         </a>
     </nav>
     <header>
@@ -24,150 +24,156 @@
       </p>
     </header>
     <form method="post" action=''>
-        <fieldset>
+        <fieldset class="spaceText">
             <h2>¿Comenzamos?</h2>
             <p>
               A continuación encontrarás una serie de preguntas. Escoge la respuesta correcta.<br>
               ¡Y sobre todo, difruta del juego!
             </p>
           </fieldset>
-          <fieldset>
-            <label id="madre">¿Quién es la madre de Luck y Leia Skywalker?</label>
-              <label for="radio10"><img src="img/Peli Motto.webp" alt="Peli Motto " class="img" target="_blank"></label>
+          <fieldset class="spaceFieldset">
+            <label id="madre" class="marginLabel">¿Quién es la madre de Luck y Leia Skywalker?</label>
+            <div class="options">
+              <label for="radio10"><img src="../resources/img/Peli Motto.webp" alt="Peli Motto " class="img" target="_blank"></label>
               <input id="radio10" type="radio" value="10" name="creador" class="inline photo">
-              <label for="radio11"><img src="img/CaraDune.webp" alt="Cara Dune" class="img" target="_blank"></label>
+              <label for="radio11"><img src="../resources/img/CaraDune.webp" alt="Cara Dune" class="img" target="_blank"></label>
               <input id="radio11" type="radio" value="11" name="creador" class="inline photo">
-              <label for="radio12"><img src="img/Padme Amidala.webp" alt="Padme Amidala" class="img" target="_blank"></label>
+              <label for="radio12"><img src="../resources/img/Padme Amidala.webp" alt="Padme Amidala" class="img" target="_blank"></label>
               <input id="radio12" type="radio" value="12" name="creador" class="inline photo">
+            </div>
               <!--La respuesta correcta es Padme Amidala-->
             </fieldset>
-            <fieldset class="imgwindu">
-              <label>¿Qué personaje interpreta Samuel L. Jackson?</label>
-                <label for="maul" class="vida">
+            <fieldset class="imgwindu spaceFieldsetBgImg">
+              <label class="marginLabel">¿Qué personaje interpreta Samuel L. Jackson?</label>
+                <label for="maul" >
                   <input id="maul" type="radio" value="maul" name="windu" class="inline dead">
                   Lord sith Darth Maul.
                   </label>
-                <label for="chew" class="vida">
+                <label for="chew" >
                   <input id="chew" type="radio" value="chew" name="windu" class="inline dead">
                   El de Chewbacca.
                 </label>
-                <label for="Mace"class="vida">
+                <label for="Mace">
                   <input id="Mace" type="radio" value="Mace" name="windu" class="inline dead">
                   Maestro jedi Mace Windu.
                 </label> 
-                <label for="poe"class="vida">
+                <label for="poe">
                   <input id="poe" type="radio" value="poe" name="windu" class="inline dead">
                  El de Poe Dameron. 
                 </label> 
                 <!--La respuesta correcta es Maestro jedi Mace Windu.-->
             </fieldset>
-            <fieldset>
-              <label>El lider oculto del Imperio en el senado es...</label>
-                <label for="radio13"><img src="img/yoda.jpg" alt="yoda" class="img" target="_blank"></label>
+            <fieldset class="spaceFieldset">
+              <label class="marginLabel">El lider oculto del Imperio en el senado es...</label>
+              <div class="options">
+                <label for="radio13"><img src="../resources/img/yoda.jpg" alt="yoda" class="img" target="_blank"></label>
                 <input id="radio13" type="radio" value="13" name="creador" class="inline photo">  
-                <label for="radio14"><img src="img/palpatine.jpg" alt="palpatine" class="img" target="_blank"></label>
+                <label for="radio14"><img src="../resources/img/palpatine.jpg" alt="palpatine" class="img" target="_blank"></label>
                 <input id="radio14" type="radio" value="14" name="creador" class="inline photo">  
-                <label for="radio15"><img src="img/Bail_Organa.webp" alt="Organa" class="img" target="_blank"></label>
+                <label for="radio15"><img src="../resources/img/Bail_Organa.webp" alt="Organa" class="img" target="_blank"></label>
                 <input id="radio15" type="radio" value="15" name="creador" class="inline photo">  
+              </div>
              <!--La respuesta correcta es el Emperador Palpatin--> 
             </fieldset>
-            <fieldset class="imgpadawan">
-              <label>¿Qué nombre reciben los aprendices jedais?</label>
-                <label for="aprendiz" class="vida">
+            <fieldset class="imgpadawan spaceFieldsetBgImg">
+              <label class="marginLabel">¿Qué nombre reciben los aprendices jedais?</label>
+                <label for="aprendiz" >
                   <input id="aprendiz" type="radio" value="aprendiz" name="padawan" class="inline dead">
                   Aprendiz Sith.
                   </label>
-                <label for="padawan" class="vida">
+                <label for="padawan" >
                   <input id="padawan" type="radio" value="padawan" name="padawan" class="inline dead">
                   Padawan.
                 </label>
-                <label for="centinela"class="vida">
+                <label for="centinela">
                   <input id="centinela" type="radio" value="centinela" name="padawan" class="inline dead">
                   Centinela Jedi.
                 </label> 
-                <label for="chulita"class="vida">
+                <label for="chulita">
                   <input id="chulita" type="radio" value="chulita" name="padawan" class="inline dead">
                   Chulit@.
                 </label> 
                 <!--La respuesta correcta es padawan-->
             </fieldset>
-            <fieldset>
-              <label>¿Quién es el cazarrecompensas Cad Bane?</label>
-                <label for="radio18"><img src="img/CadBane.jpg" alt="cadBane" class="img" target="_blank"></label>
+            <fieldset class="spaceFieldset">
+              <label class="marginLabel">¿Quién es el cazarrecompensas Cad Bane?</label>
+              <div class="options">
+                <label for="radio18"><img src="../resources/img/CadBane.jpg" alt="cadBane" class="img" target="_blank"></label>
                 <input id="radio18" type="radio" value="18" name="bane" class="inline photo">  
-                <label for="radio17"><img src="img/fennec-Shand.jpg" alt="fennec" class="img" target="_blank"></label>
+                <label for="radio17"><img src="../resources/img/fennec-shand.jpg" alt="fennec" class="img" target="_blank"></label>
                 <input id="radio17" type="radio" value="17" name="bane" class="inline photo">  
-                <label for="radio16"><img src="img/CadeSkywalker.webp" alt="cade" class="img" target="_blank"></label>
+                <label for="radio16"><img src="../resources/img/CadeSkywalker.webp" alt="cade" class="img" target="_blank"></label>
                 <input id="radio16" type="radio" value="16" name="bane" class="inline photo">
+              </div>
               <!--La respuesta correcta es Cad Bane --> 
             </fieldset>
-            <fieldset class="imgsolo">
-              <label>¿Cómo se llama la nave de Han Solo?</label>
-                <label for="esclavo" class="vida">
+            <fieldset class="imgsolo spaceFieldsetBgImg">
+              <label class="marginLabel">¿Cómo se llama la nave de Han Solo?</label>
+                <label for="esclavo" >
                   <input id="esclavo" type="radio" value="esclavo" name="solo" class="inline dead">
                   El Esclavo I. 
                 </label>
-                <label for="ebano"class="vida">
+                <label for="ebano">
                   <input id="ebano" type="radio" value="ebano" name="solo" class="inline dead">
                   El Halcón de Ébano.
                 </label> 
-                <label for="sombra" class="vida">
+                <label for="sombra" >
                   <input id="sombra" type="radio" value="sombra" name="solo" class="inline dead">
                   Sombra Furtiva.
                 </label>
-                <label for="halcon"class="vida">
+                <label for="halcon">
                   <input id="halcon" type="radio" value="halcon" name="solo" class="inline dead">
                   Halcón Milenario.
                 </label> 
                 <!--La respuesta correcta es el Halcón Milenario-->
             </fieldset>
-            <fieldset class="imgbanda">
-              <label>¿Quién compuso la banda sonora de Star Wars?</label>
-                <label for="jhon" class="vida">
+            <fieldset class="imgbanda spaceFieldsetBgImg">
+              <label class="marginLabel">¿Quién compuso la banda sonora de Star Wars?</label>
+                <label for="jhon" >
                   <input id="jhon" type="radio" value="jhon" name="banda" class="inline dead">
                   Jhon Williams.
                 </label>
-                <label for="hans"class="vida">
+                <label for="hans">
                   <input id="hans" type="radio" value="hans" name="banda" class="inline dead">
                   Hans Zimmer.
                 </label> 
-                <label for="ennio" class="vida">
+                <label for="ennio" >
                   <input id="ennio" type="radio" value="ennio" name="banda" class="inline dead">
                   Ennio Morricone.
                 </label>
-                <label for="james"class="vida">
+                <label for="james">
                   <input id="james" type="radio" value="james" name="banda" class="inline dead">
                   James Horner.
                 </label> 
                 <!--La respuesta correcta es Jhon Williams-->
             </fieldset>             
-            <fieldset>
+            <fieldset class="spaceText">
               <h2>¡Vas muy bien!</h2>
               <p>
                 Las siguientes preguntas son de opción múltiple.<br>¿Preparado?
               </p>
             </fieldset>
-            <fieldset class="imgeterno">
-                <label>¿Qué era el culto del Sith Eterno?</label>
-                <label for="culto" class="vida">
+            <fieldset class="imgeterno spaceFieldsetBgImg">
+                <label class="marginLabel">¿Qué era el culto del Sith Eterno?</label>
+                <label for="culto" >
                   <input id="culto" type="checkbox" name="culto" class="inline dead" value="culto"/>
                   Era un culto secreto del planeta Exegol. 
                 </label>
-                <label for="res" class="vida">
+                <label for="res" >
                   <input id="res" type="checkbox" name="res" class="inline dead" value="res"/>
                   Buscaba resucitar la Orden Sith.
                 </label>
-                <label for="man" class="vida">
+                <label for="man" >
                   <input id="man" type="checkbox" name="man" class="inline dead" value="man"/>
                   Conspiraba para reestablecer la República.
                 </label>
                 </label>
-                <label for="destructores" class="vida">
+                <label for="destructores" >
                   <input id="destructores" type="checkbox" name="destructores" class="inline dead" value="destructores"/>
                   Creó un ejército y una flota de destructores.
                 </label>
                 </label>
-                <label for="fundador" class="vida">
+                <label for="fundador" >
                   <input id="fundador" type="checkbox" name="fundador" class="inline dead" value="fundador"/>
                   Darth Vader fue su fundador.
                 </label>
@@ -180,49 +186,49 @@
                    Conspiraba para reestablecer el Imperio
                 -->
               </fieldset>
-              <fieldset class="imgventres">
-                <label>¿Quién es Assaj Ventress?</label>
-                <label for="honrada" class="vida">
+              <fieldset class="imgventres spaceFieldsetBgImg">
+                <label class="marginLabel">¿Quién es Assaj Ventress?</label>
+                <label for="honrada" >
                   <input id="honrada" type="checkbox" name="honrada" class="inline dead" value="honrada"/>
                    Fue honrada por el Consejo jedi.
                 </label>
-                <label for="asesina" class="vida">
+                <label for="asesina" >
                   <input id="asesina" type="checkbox" name="asesina" class="inline dead" value="asesina"/>
                   Una asesina al servicio de los Shit.
                 </label>
-                <label for="clan" class="vida">
+                <label for="clan" >
                   <input id="clan" type="checkbox" name="clan" class="inline dead" value="clan"/>
                   Nació en el clan Hermanas de la Noche.
                 </label>
-                <label for="enemigo" class="vida">
+                <label for="enemigo" >
                   <input id="enemigo" type="checkbox" name="enemigo" class="inline dead" value="enemigo"/>
                   El Conde Dooku fue su archienemigo.
                 </label>
-                <label for="entregada" class="vida">
+                <label for="entregada" >
                   <input id="entregada" type="checkbox" name="entregada" class="inline dead" value="entregada"/>
                   De niña, fue entregada como esclava.
                 </label>
                 <!--las respuestas correctas son: todas-->
             </fieldset>
-            <fieldset class="imgwatto">
-              <label>¿Quién era Watto en La Amenaza Fantasma?</label>
-              <label for="trucos" class="vida">
+            <fieldset class="imgwatto spaceFieldsetBgImg">
+              <label class="marginLabel">¿Quién era Watto en La Amenaza Fantasma?</label>
+              <label for="trucos" >
                 <input id="trucos" type="checkbox" name="trucos" class="inline dead" value="trucos"/>
                  Era inmune a los trucos mentales jedi.
               </label>
-              <label for="olia" class="vida">
+              <label for="olia" >
                 <input id="olia" type="checkbox" name="olia" class="inline dead" value="olia"/>
                 Olía a agua de rosas y vainilla.
               </label>
-              <label for="negocio" class="vida">
+              <label for="negocio" >
                 <input id="negocio" type="checkbox" name="negocio" class="inline dead" value="negocio"/>
                 Tenía un negocio de recambios en Tatooine.
               </label>
-              <label for="amo" class="vida">
+              <label for="amo" >
                 <input id="amo" type="checkbox" name="amo" class="inline dead" value="amo"/>
                 Fue amo de Anakin Skywalker y su madre.
               </label>
-              <label for="apuesta" class="vida">
+              <label for="apuesta" >
                 <input id="apuesta" type="checkbox" name="apuesta" class="inline dead" value="apuesta"/>
                 Qui-gon los liberó gracias a una apuesta.
               </label>
@@ -238,7 +244,7 @@
           </fieldset>
             <!--Bajo cada pregunta iría la respuesta, acertada o no y una pequeña explicación.
             Mirar cómo hacerlo--> 
-            <fieldset>
+            <fieldset class="spaceText">
               <h2>¡Estos son tus resultados!</h2>
               <p>Lo has conseguido<br>¡Eres un auténtico Padawan!</p>
               <!--Irian los resultados según las preguntas acertadas. 
@@ -248,33 +254,33 @@
               <h2 class="bienvenido">¿Aún tienes ganas de más?</h2>
               <p>Sigue jugando el siguiente nivel.<br>
                 Encuentra el cristal para montar tu espada jedi.</p>
-              <input type="button" class="button" value= "Mucho que aprender todavia tienes" onclick="window.location.href='indexencuesta.html'">
+              <input type="button" class="button" value= "Mucho que aprender todavia tienes" onclick="window.location.href='./encuesta.html'">
             </fieldset>   
           </form>
           <footer>
             <a href="https://starwars.fandom.com/es/wiki/Categor%C3%ADa:Armas" target="_blank">
-              <img src="img/arma star wars.gif" class="arma" alt="arma">
+              <img src="../resources/img/arma star wars.gif" class="arma" alt="arma">
             </a>
             <a href="https://es.wikipedia.org/wiki/R2-D2" target="_blank">
-            <img src="img/R2D2.gif" class="r2d2" alt="r2d2">
+            <img src="../resources/img/R2D2.gif" class="r2d2" alt="r2d2">
             </a>
             <a href="https://es.wikipedia.org/wiki/Boba_Fett" target="_blank">
-            <img src="img/boba y guerrera.gif" class="boba" alt="boba y guerrera">
+            <img src="../resources/img/boba y guerrera.gif" class="boba" alt="boba y guerrera">
             </a>
             <a href="https://starwars.fandom.com/es/wiki/Kuiil" target="_blank">
-            <img src="img/Señor ayuda mandalor.gif" class="senor" alt="señor">
+            <img src="../resources/img/Señor ayuda mandalor.gif" class="senor" alt="señor">
             </a>
             <a href="https://es.wikipedia.org/wiki/El_Mandaloriano_(personaje)" target="_blank">
-            <img src="img/Mandalor y baby Joda.gif" class="mandalor" alt="mandalor">
+            <img src="../resources/img/Mandalor y baby Joda.gif" class="mandalor" alt="mandalor">
             </a>
             <a href="https://starwars.fandom.com/es/wiki/Carasynthia_Dune" target="_blank">
-            <img src="img/Guerrera de choque.gif" class="guerrera" alt="guerrera">
+            <img src="../resources/img/Guerrera de choque.gif" class="guerrera" alt="guerrera">
             </a>
             <a href="https://es.wikipedia.org/wiki/Darth_Vader" target="_blank">
-            <img src="img/Darth Vader.gif" class="figura" alt="vader">
+            <img src="../resources/img/Darth Vader.gif" class="figura" alt="vader">
             </a>
         </footer>
-        <audio src="./sound/fondo.mp3" autoplay controls class="controls"></audio>
+        <audio src="../resources/sound/fondo.mp3" autoplay controls class="controls"></audio>
         <script src="game.js"></script>
   </body>
 </html>

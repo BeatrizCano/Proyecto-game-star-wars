@@ -1,7 +1,7 @@
 body {
     background: darkgray;
     background-image: 
-    url(img/fondo.jpg);
+    url(../resources/img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,9 +33,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.login {
+.imputsLogin {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.centerForm {
+    margin-top: 4rem;
+    display: flex;
 }
 
 .button {
@@ -46,16 +51,26 @@ body {
     margin-top: 10px;
     cursor: pointer;
     border:solid 1px gold;
+    font-weight: bold;
 }
 
 .log {
-    padding: 10px 40px;
+    padding: 13px 50px;
     font-size: medium;
     border-radius: 15px;
     margin:10px 0;
-    margin-top: 10px;
+    margin-top: 25px;
     cursor: pointer;
-    border:solid 1px gold;
+    background-color: deepskyblue ;
+    color: #f5f6f7;
+    border:solid 1px deepskyblue;
+    font-weight: bold;
+}
+
+.log:hover {
+    background-color: #f5f6f7;
+    color:   deepskyblue;
+    border:solid 1px deepskyblue;
 }
 
 .button:hover {
@@ -69,7 +84,7 @@ header {
 
 form {
     max-width: 70%;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 300px;
     margin: 0 auto;
     margin-bottom: 80px;
@@ -116,19 +131,14 @@ fieldset {
 }
 
 .img {
-    width: 60px;
-    height: 80px;
+    width: 70px;
+    height: 90px;
     padding: 10px;
-}
-
-.vida {
-    display: flex;
-    margin: 0.5rem 0;
 }
 
 .imgespada {
     background-image: linear-gradient( 115deg, hsla(250, 69%, 10%, 0.7), rgba(51, 43, 6, 0.705) ),
-    url(img/Jedi\ consul.jpg);
+    url(../resources/img/Jedi\ consul.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -138,7 +148,7 @@ fieldset {
 
 .imgdroide {
     background-image: linear-gradient( 115deg, hsla(249, 67%, 31%, 0.468), rgba(132, 111, 15, 0.62) ),
-    url(img/droides\ de\ combate.jpg);
+    url(../resources/img/droides\ de\ combate.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -147,7 +157,7 @@ fieldset {
 
 .imgcredo {
     background-image: linear-gradient( 115deg, hsla(249, 67%, 31%, 0.709), rgba(132, 111, 15, 0.714) ),
-    url(img/Asedio\ a\ mandalor.webp);
+    url(../resources/img/Asedio\ a\ mandalor.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,7 +166,7 @@ fieldset {
 
 .imgdooku {
     background-image: linear-gradient( 115deg, hsla(249, 67%, 31%, 0.468), rgba(132, 15, 128, 0.62) ),
-    url(img/Conde\ Dooku.jpeg);
+    url(../resources/img/Conde\ Dooku.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -164,7 +174,7 @@ fieldset {
 
 .img66 {
     background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.553), rgba(33, 7, 33, 0.558) ),
-    url(img/orden\ 66.jpg);
+    url(../resources/img/orden\ 66.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -172,7 +182,7 @@ fieldset {
 
 .imgossus {
     background-image: linear-gradient( 115deg, hsla(59, 67%, 31%, 0.802), rgba(132, 15, 128, 0.712) ),
-    url(img/masacre\ en\ Ossus.webp);
+    url(../resources/img/masacre\ en\ Ossus.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -180,7 +190,7 @@ fieldset {
 
 .imgrevan {
     background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.553), rgba(33, 7, 33, 0.558) ),
-    url(img/darth\ revan.jpg);
+    url(../resources/img/darth\ revan.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -188,7 +198,7 @@ fieldset {
 
 .imgmas {
     background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.654), rgba(33, 7, 33, 0.644) ),
-    url(img/Fondo\ final.jpg);
+    url(../resources/img/Fondo\ final.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -196,7 +206,7 @@ fieldset {
 
 .imgeterno {
     background-image: linear-gradient( 115deg, hsla(60, 63%, 9%, 0.728), rgba(33, 7, 33, 0.723) ),
-    url(img/Order_of_the_Sith_Lord.webp);
+    url(../resources/img/Order_of_the_Sith_Lord.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -204,7 +214,7 @@ fieldset {
 
 .imgwindu {
     background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.422), rgba(33, 7, 33, 0.558) ),
-    url(img/Samuel\ L.\ Jackson.jpeg);
+    url(../resources/img/Samuel\ L.\ Jackson.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -212,7 +222,7 @@ fieldset {
 
 .imgpadawan {
     background-image: linear-gradient( 115deg, hsla(60, 60%, 4%, 0.422), rgba(33, 7, 33, 0.558) ),
-    url(img/padawan.webp);
+    url(../resources/img/padawan.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -220,7 +230,7 @@ fieldset {
 
 .imgsolo {
     background-image: linear-gradient( 115deg, hsla(201, 70%, 9%, 0.773), rgba(33, 7, 33, 0.726) ),
-    url(img/El\ Halcón\ Milenario.jpg);
+    url(../resources/img/El\ Halcón\ Milenario.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -228,7 +238,7 @@ fieldset {
 
 .imgventres {
     background-image: linear-gradient( 115deg, hsla(9, 70%, 9%, 0.741), rgba(33, 7, 33, 0.726) ),
-    url(img/Assaj\ ventres.jpg);
+    url(../resources/img/Asajj_Ventress.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -236,7 +246,7 @@ fieldset {
 
 .imgcelebrar {
     background-image: linear-gradient( 115deg, hsla(55, 52%, 9%, 0.71), rgba(54, 12, 39, 0.701) ),
-    url(img/fondo\ celebracion.png);
+    url(../resources/img/fondo\ celebracion.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -244,7 +254,7 @@ fieldset {
 
 .imgwatto {
     background-image: linear-gradient( 115deg, hsla(90, 4%, 20%, 0.687), rgba(32, 13, 31, 0.725) ),
-    url(img/watto.jpg);
+    url(../resources/img/watto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -252,7 +262,7 @@ fieldset {
 
 .imgbanda {
     background-image: linear-gradient( 115deg, hsla(94, 52%, 14%, 0.606), rgba(110, 44, 108, 0.591) ),
-    url(img/banda\ sonora.jpg);
+    url(../resources/img/banda\ sonora.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -276,6 +286,7 @@ h1 {
 
 h2 {
     color: deepskyblue;
+    margin-bottom: 2px;
 }
 
 .bienvenido {
@@ -352,4 +363,57 @@ h2 {
     margin-top: 50px;
     box-shadow: 0 0 30px #fff;
 }
+
+.spaceText {
+    height: 180px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.spaceFieldsetBgImg {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.marginLabel {
+    margin-bottom: 10px;
+}
+
+.spaceFieldset {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+}
+
+.marginTop {
+    margin-top: 15px;
+}
+
+footer {
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;     
+}
+
+.content {
+    flex: 1;
+    margin-top: 1.5rem;
+}
+
 
